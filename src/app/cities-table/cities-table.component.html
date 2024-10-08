@@ -1,0 +1,23 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">População</th>
+        <th scope="col">Área</th>
+        <th scope="col">Estado</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let city of cities">
+        
+        <th>{{city.id}}</th>
+        <th>{{city.name}}</th>
+        <th>{{city.population}}</th>
+        <th>{{city.area}}</th>
+        <th>{{city.state}}</th>
+        
+      </tr>
+    </tbody>
+  </table>

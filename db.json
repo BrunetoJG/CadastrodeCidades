@@ -1,0 +1,34 @@
+{
+    "cities": [
+        {
+            "id": 1,
+            "name": "Indaiatuba",
+            "Population": 260.690,
+            "area": 311.545,
+            "state": "SP"
+        },
+        {
+            "id": 2,
+            "name": "Itu",
+            "Population": 175.568,
+            "area": 640.719,
+            "state":"SP"
+        },
+        {
+            "id": 3,
+            "name": "Campinas",
+            "Population": 1.188932,
+            "area": 795.697,
+            "state": "SP"
+          },
+          {
+            "id": 4,
+            "name": "Sorocaba",
+            "Population": 676.118,
+            "area": 456.262,
+            "state": "SP"
+          }
+    ]
+        
+    
+}
