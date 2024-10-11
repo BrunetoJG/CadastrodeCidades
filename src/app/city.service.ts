@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { city } from './city';
+import { City } from './city';
 
 
 
@@ -14,7 +14,11 @@ export class CityService {
 
   url = 'http://localhost:3000/cities';
 
-  getcities(): Observable<city[]>{
-    return this.http.get<city[]>(this.url);
+  getcities(): Observable<City[]>{
+    return this.http.get<City[]>(this.url);
+  }
+
+  delete(cities:City): Observable<void>{
+    return this.http.delete<void>(`${this.url}/${cities.id}`);
   }
 }

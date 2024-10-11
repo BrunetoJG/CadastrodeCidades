@@ -14,10 +14,13 @@
         
         <th>{{city.id}}</th>
         <th>{{city.name}}</th>
-        <th>{{city.population}}</th>
-        <th>{{city.area}}</th>
+        <th>{{city.population}} hab.</th>
+        <th>{{city.area}} km²</th>
         <th>{{city.state}}</th>
         
+        <td>
+          <button class="btn btn-danger" (click)="delete(city)">Remover</button>
+        </td>
       </tr>
     </tbody>
   </table>

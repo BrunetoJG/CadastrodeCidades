@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { city } from '../city';
+import { City } from '../city';
 import { CityService } from '../city.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { CityService } from '../city.service';
 })
 export class CitiesTableComponent implements OnInit{
 
-  cities: city[] = [];
+  cities: City[] = [];
 
   constructor(private service: CityService){}
 
@@ -21,6 +21,11 @@ export class CitiesTableComponent implements OnInit{
           next: data => this.cities = data
         }
       );
+  }
+  delete(cities:City){
+    this.service.delete(cities).subscribe({
+      next: () => this.loadCities()
+    })
   }
 
 }
