@@ -17,6 +17,15 @@ export class CityService {
   getcities(): Observable<City[]>{
     return this.http.get<City[]>(this.url);
   }
+  getcitiesById(id: number): Observable<City> {
+    return this.http.get<City>(`${this.url}/${id}`);
+  }
+  update(cities:City): Observable<City>{
+    return this.http.put<City>(`${this.url}/${cities.id}`, cities);
+  }
+  save(cities:City):Observable<City>{
+    return this.http.post<City>(this.url, cities);
+  }
 
   delete(cities:City): Observable<void>{
     return this.http.delete<void>(`${this.url}/${cities.id}`);

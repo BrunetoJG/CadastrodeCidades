@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CitiesTableComponent } from './cities-table/cities-table.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CitiesFormComponent } from './cities-form/cities-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CitiesTableComponent
+    CitiesTableComponent,
+    CitiesFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

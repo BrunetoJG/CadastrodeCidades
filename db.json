@@ -1,34 +1,32 @@
 {
-    "cities": [
-        {
-            "id": 1,
-            "name": "Indaiatuba",
-            "population": 260.690,
-            "area": 311.545,
-            "state": "SP"
-        },
-        {
-            "id": 2,
-            "name": "Itu",
-            "population": 175.568,
-            "area": 640.719,
-            "state":"SP"
-        },
-        {
-            "id": 3,
-            "name": "Campinas",
-            "population": 1.188932,
-            "area": 795.697,
-            "state": "SP"
-          },
-          {
-            "id": 4,
-            "name": "Sorocaba",
-            "population": 676.118,
-            "area": 456.262,
-            "state": "SP"
-          }
-    ]
-        
-    
+  "cities": [
+    {
+      "id": 1,
+      "name": "Indaiatuba",
+      "population": 260.69,
+      "area": 311.545,
+      "state": "SP"
+    },
+    {
+      "id": 2,
+      "name": "Itu",
+      "population": 175.568,
+      "area": 640.719,
+      "state": "SP"
+    },
+    {
+      "id": 3,
+      "name": "Florianópolis",
+      "population": 537.211,
+      "area": 674.844,
+      "state": "SC"
+    },
+    {
+      "id": 4,
+      "name": "Sorocaba",
+      "population": 676.118,
+      "area": 456.262,
+      "state": "SP"
+    }
+  ]
 }

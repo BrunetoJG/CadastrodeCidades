@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Cadastro de Cidades:</h1>
+   <form [formGroup]="formGroupCities">
+     <div class="mb-3">
+      <select class="form-select form-select " aria-label="Small select example">
+        <option selected>Nome da cidade </option>
+        <option value="1">Indaiatuba</option>
+        <option value="2">Itu</option>
+        <option value="3">Florianópolis</option>
+        <option value="4">Sorocaba</option>
+      </select>
+     </div>
+     <div class="mb-3">
+       <label for="state" class="form-label">Estado: </label>
+       <input formControlName="state" type="text" class="form-control" id="state" placeholder="Digite o Estado">
+     </div>
+     <div class="mb-3">
+       <label for="population" class="form-label">População: </label>
+       <input formControlName="population" type="text" class="form-control" id="population" placeholder="Digite a população">
+     </div>
+     <button *ngIf= "isEditing" type="button" class="btn btn-primary" (click)="update()">Salvar</button>
+
+     <button *ngIf= "!isEditing" type="button" class="btn btn-primary" (click)="save()">Criar</button>
+   </form>
+</div>
